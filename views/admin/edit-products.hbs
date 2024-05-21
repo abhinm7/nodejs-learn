@@ -1,0 +1,36 @@
+<section>
+    <div class="container">
+        <h3>Modify product details :</h3>
+        
+        <form action="/admin/edit-product" method="POST" enctype="multipart/form-data">
+        <input type="hidden" value="{{prod._id}}" name="id">
+    <input type="text" value="{{prod.product-name}}" class="form-control mt-4" name="name" placeholder="Enter Product Name">
+      <select multiple class="form-control mt-3" id="exampleFormControlSelect2" name="category">
+        <option value="{{prod.product-category}}" selected>No change ( {{prod.product-category}} )</option>
+       <option value="Mobile">Mobile</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Cosmetics">Cosmetics</option>
+        <option value="Tools">Tools</option>
+    </select>
+   
+    <input type="text" value="{{prod.product-description}}" class="form-control mt-2" name="description" placeholder="Enter a description">
+    <input type="number" value="{{prod.product-price}}" class="form-control mt-2" name="price" placeholder="Enter Product Price">
+   
+  
+  <div class="form-group mt-4">
+    <label for="exampleFormControlFile1">Insert an Image :</label><br>
+    <img src="/product-images/{{prod._id}}.jpg" alt="" height="150px" width="150px" id="imgV">
+    <input type="file" class="form-control-file" name="img" id="exampleFormControlFile1" onclick="imgview(event)">
+  </div>
+   <button type="submit" class="btn btn-primary mb-2">Add Product</button>
+    
+    
+    </form>
+    </div>
+    
+</section>
+<script>
+  function imgview(event){
+    document.getElementById('imgV').src=URL.createObjectURL(event.target.files[0]);
+  }
+</script>

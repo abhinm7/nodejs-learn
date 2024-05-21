@@ -1,0 +1,28 @@
+<section>
+    <div class="container">
+        <h3>Enter Products Details</h3>
+        
+        <form action="/admin/add-product" method="POST" enctype="multipart/form-data">
+    <input type="text" value="cooker" class="form-control mt-4" name="product-name" placeholder="Enter Product Name">
+      <select multiple class="form-control mt-3" id="exampleFormControlSelect2" name="product-category">
+       <option value="Mobile">Mobile</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Cosmetics">Cosmetics</option>
+        <option value="Tools">Tools</option>
+    </select>
+   
+    <input type="text" value="this is a cooker" class="form-control mt-2" name="product-description" placeholder="Enter a description">
+    <input type="number" value="2400" class="form-control mt-2" name="product-price" placeholder="Enter Product Price">
+   
+  
+  <div class="form-group mt-4">
+    <label for="exampleFormControlFile1">Insert an Image :</label>
+    <input type="file" class="form-control-file" name="image" id="exampleFormControlFile1">
+  </div>
+   <button type="submit" class="btn btn-primary mb-2">Add Product</button>
+    
+    
+    </form>
+    </div>
+    
+</section>
