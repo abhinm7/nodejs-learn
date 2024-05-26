@@ -1,0 +1,671 @@
+orers from userhelper : Cursor {
+  _readableState: ReadableState {
+    state: 6193,
+    highWaterMark: 16,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: null,
+    errored: null,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: null
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  operation: FindOperation {
+    options: {
+      skip: 0,
+      limit: 0,
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference],
+      db: [Db],
+      promiseLibrary: [Function: Promise]
+    },
+    explain: undefined,
+    ns: MongoDBNamespace { db: 'shopping', collection: 'order' },
+    cmd: {
+      find: 'shopping.order',
+      limit: 0,
+      skip: 0,
+      query: {},
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference]
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    },
+    cursorState: {
+      cursorId: null,
+      cmd: [Object],
+      documents: [],
+      cursorIndex: 0,
+      dead: false,
+      killed: false,
+      init: false,
+      notified: false,
+      limit: 0,
+      skip: 0,
+      batchSize: 1000,
+      currentLimit: 0,
+      transforms: undefined,
+      raw: undefined
+    }
+  },
+  pool: null,
+  server: null,
+  disconnectHandler: undefined,
+  bson: BSON {},
+  ns: 'shopping.order',
+  namespace: MongoDBNamespace { db: 'shopping', collection: 'order' },
+  cmd: {
+    find: 'shopping.order',
+    limit: 0,
+    skip: 0,
+    query: {},
+    raw: undefined,
+    hint: null,
+    timeout: undefined,
+    slaveOk: true,
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    }
+  },
+  options: {
+    skip: 0,
+    limit: 0,
+    raw: undefined,
+    hint: null,
+    timeout: undefined,
+    slaveOk: true,
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    },
+    db: Db {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      s: [Object],
+      serverConfig: [Getter],
+      bufferMaxEntries: [Getter],
+      databaseName: [Getter],
+      [Symbol(kCapture)]: false
+    },
+    promiseLibrary: [Function: Promise]
+  },
+  topology: NativeTopology {
+    _events: [Object: null prototype] {
+      authenticated: [Function (anonymous)],
+      error: [Array],
+      timeout: [Array],
+      close: [Array],
+      parseError: [Array],
+      fullsetup: [Array],
+      all: [Array],
+      reconnect: [Array],
+      commandStarted: [Function (anonymous)],
+      commandSucceeded: [Function (anonymous)],
+      commandFailed: [Function (anonymous)],
+      serverOpening: [Function (anonymous)],
+      serverClosed: [Function (anonymous)],
+      serverDescriptionChanged: [Function (anonymous)],
+      serverHeartbeatStarted: [Function (anonymous)],
+      serverHeartbeatSucceeded: [Function (anonymous)],
+      serverHeartbeatFailed: [Function (anonymous)],
+      topologyOpening: [Function (anonymous)],
+      topologyClosed: [Function (anonymous)],
+      topologyDescriptionChanged: [Function (anonymous)],
+      joined: [Function (anonymous)],
+      left: [Function (anonymous)],
+      ping: [Function (anonymous)],
+      ha: [Function (anonymous)],
+      connectionPoolCreated: [Function (anonymous)],
+      connectionPoolClosed: [Function (anonymous)],
+      connectionCreated: [Function (anonymous)],
+      connectionReady: [Function (anonymous)],
+      connectionClosed: [Function (anonymous)],
+      connectionCheckOutStarted: [Function (anonymous)],
+      connectionCheckOutFailed: [Function (anonymous)],
+      connectionCheckedOut: [Function (anonymous)],
+      connectionCheckedIn: [Function (anonymous)],
+      connectionPoolCleared: [Function (anonymous)],
+      open: [Function]
+    },
+    _eventsCount: 35,
+    _maxListeners: Infinity,
+    s: {
+      id: 0,
+      options: [Object],
+      seedlist: [Array],
+      state: 'connected',
+      description: [TopologyDescription],
+      serverSelectionTimeoutMS: 30000,
+      heartbeatFrequencyMS: 10000,
+      minHeartbeatFrequencyMS: 500,
+      Cursor: [class Cursor extends CoreCursor],
+      bson: BSON {},
+      servers: [Map],
+      sessionPool: [ServerSessionPool],
+      sessions: Set(0) {},
+      promiseLibrary: [Function: Promise],
+      credentials: undefined,
+      clusterTime: null,
+      connectionTimers: Set(0) {},
+      sCapabilities: [ServerCapabilities]
+    },
+    serverApi: undefined,
+    [Symbol(kCapture)]: false,
+    [Symbol(waitQueue)]: Denque {
+      _head: 2,
+      _tail: 2,
+      _capacity: undefined,
+      _capacityMask: 3,
+      _list: [Array]
+    }
+  },
+  cursorState: {
+    cursorId: null,
+    cmd: {
+      find: 'shopping.order',
+      limit: 0,
+      skip: 0,
+      query: {},
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference]
+    },
+    documents: [],
+    cursorIndex: 0,
+    dead: false,
+    killed: false,
+    init: false,
+    notified: false,
+    limit: 0,
+    skip: 0,
+    batchSize: 1000,
+    currentLimit: 0,
+    transforms: undefined,
+    raw: undefined
+  },
+  logger: Logger { className: 'Cursor' },
+  s: {
+    numberOfRetries: 5,
+    tailableRetryInterval: 500,
+    currentNumberOfRetries: 5,
+    state: 0,
+    promiseLibrary: [Function: Promise],
+    explicitlyIgnoreSession: false
+  },
+  [Symbol(kCapture)]: false
+}
+All orders : undefined
+GET /admin/allOrders 302 24.351 ms - 56
+GET /admin 304 54.417 ms - -
+GET /stylesheets/style.css 304 1.859 ms - -
+GET /javascripts/script.js 304 34.310 ms - -
+GET /product-images/664c645e8ca0698440504459.jpg 304 18.699 ms - -
+GET /product-images/6633e20d403d3e53488d3fad.jpg 304 56.325 ms - -
+GET /product-images/6633e22b403d3e53488d3faf.jpg 304 43.721 ms - -
+GET /product-images/6633e2d86772e03a58048c28.jpg 304 44.611 ms - -
+GET /product-images/664c647b8ca069844050445a.jpg 304 51.582 ms - -
+orers from userhelper : Cursor {
+  _readableState: ReadableState {
+    state: 6193,
+    highWaterMark: 16,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: null,
+    errored: null,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: null
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  operation: FindOperation {
+    options: {
+      skip: 0,
+      limit: 0,
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference],
+      db: [Db],
+      promiseLibrary: [Function: Promise]
+    },
+    explain: undefined,
+    ns: MongoDBNamespace { db: 'shopping', collection: 'order' },
+    cmd: {
+      find: 'shopping.order',
+      limit: 0,
+      skip: 0,
+      query: {},
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference]
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    },
+    cursorState: {
+      cursorId: null,
+      cmd: [Object],
+      documents: [],
+      cursorIndex: 0,
+      dead: false,
+      killed: false,
+      init: false,
+      notified: false,
+      limit: 0,
+      skip: 0,
+      batchSize: 1000,
+      currentLimit: 0,
+      transforms: undefined,
+      raw: undefined
+    }
+  },
+  pool: null,
+  server: null,
+  disconnectHandler: undefined,
+  bson: BSON {},
+  ns: 'shopping.order',
+  namespace: MongoDBNamespace { db: 'shopping', collection: 'order' },
+  cmd: {
+    find: 'shopping.order',
+    limit: 0,
+    skip: 0,
+    query: {},
+    raw: undefined,
+    hint: null,
+    timeout: undefined,
+    slaveOk: true,
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    }
+  },
+  options: {
+    skip: 0,
+    limit: 0,
+    raw: undefined,
+    hint: null,
+    timeout: undefined,
+    slaveOk: true,
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    },
+    db: Db {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      s: [Object],
+      serverConfig: [Getter],
+      bufferMaxEntries: [Getter],
+      databaseName: [Getter],
+      [Symbol(kCapture)]: false
+    },
+    promiseLibrary: [Function: Promise]
+  },
+  topology: NativeTopology {
+    _events: [Object: null prototype] {
+      authenticated: [Function (anonymous)],
+      error: [Array],
+      timeout: [Array],
+      close: [Array],
+      parseError: [Array],
+      fullsetup: [Array],
+      all: [Array],
+      reconnect: [Array],
+      commandStarted: [Function (anonymous)],
+      commandSucceeded: [Function (anonymous)],
+      commandFailed: [Function (anonymous)],
+      serverOpening: [Function (anonymous)],
+      serverClosed: [Function (anonymous)],
+      serverDescriptionChanged: [Function (anonymous)],
+      serverHeartbeatStarted: [Function (anonymous)],
+      serverHeartbeatSucceeded: [Function (anonymous)],
+      serverHeartbeatFailed: [Function (anonymous)],
+      topologyOpening: [Function (anonymous)],
+      topologyClosed: [Function (anonymous)],
+      topologyDescriptionChanged: [Function (anonymous)],
+      joined: [Function (anonymous)],
+      left: [Function (anonymous)],
+      ping: [Function (anonymous)],
+      ha: [Function (anonymous)],
+      connectionPoolCreated: [Function (anonymous)],
+      connectionPoolClosed: [Function (anonymous)],
+      connectionCreated: [Function (anonymous)],
+      connectionReady: [Function (anonymous)],
+      connectionClosed: [Function (anonymous)],
+      connectionCheckOutStarted: [Function (anonymous)],
+      connectionCheckOutFailed: [Function (anonymous)],
+      connectionCheckedOut: [Function (anonymous)],
+      connectionCheckedIn: [Function (anonymous)],
+      connectionPoolCleared: [Function (anonymous)],
+      open: [Function]
+    },
+    _eventsCount: 35,
+    _maxListeners: Infinity,
+    s: {
+      id: 0,
+      options: [Object],
+      seedlist: [Array],
+      state: 'connected',
+      description: [TopologyDescription],
+      serverSelectionTimeoutMS: 30000,
+      heartbeatFrequencyMS: 10000,
+      minHeartbeatFrequencyMS: 500,
+      Cursor: [class Cursor extends CoreCursor],
+      bson: BSON {},
+      servers: [Map],
+      sessionPool: [ServerSessionPool],
+      sessions: Set(0) {},
+      promiseLibrary: [Function: Promise],
+      credentials: undefined,
+      clusterTime: null,
+      connectionTimers: Set(0) {},
+      sCapabilities: [ServerCapabilities]
+    },
+    serverApi: undefined,
+    [Symbol(kCapture)]: false,
+    [Symbol(waitQueue)]: Denque {
+      _head: 3,
+      _tail: 3,
+      _capacity: undefined,
+      _capacityMask: 3,
+      _list: [Array]
+    }
+  },
+  cursorState: {
+    cursorId: null,
+    cmd: {
+      find: 'shopping.order',
+      limit: 0,
+      skip: 0,
+      query: {},
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference]
+    },
+    documents: [],
+    cursorIndex: 0,
+    dead: false,
+    killed: false,
+    init: false,
+    notified: false,
+    limit: 0,
+    skip: 0,
+    batchSize: 1000,
+    currentLimit: 0,
+    transforms: undefined,
+    raw: undefined
+  },
+  logger: Logger { className: 'Cursor' },
+  s: {
+    numberOfRetries: 5,
+    tailableRetryInterval: 500,
+    currentNumberOfRetries: 5,
+    state: 0,
+    promiseLibrary: [Function: Promise],
+    explicitlyIgnoreSession: false
+  },
+  [Symbol(kCapture)]: false
+}
+All orders : undefined
+GET /admin/allOrders 302 13.669 ms - 56
+GET /admin 304 18.202 ms - -
+GET /stylesheets/style.css 304 0.865 ms - -
+GET /javascripts/script.js 304 1.371 ms - -
+GET /product-images/6633e20d403d3e53488d3fad.jpg 304 1.225 ms - -
+GET /product-images/6633e22b403d3e53488d3faf.jpg 304 1.655 ms - -
+GET /product-images/6633e2d86772e03a58048c28.jpg 304 1.133 ms - -
+GET /product-images/664c647b8ca069844050445a.jpg 304 1.554 ms - -
+GET /product-images/664c645e8ca0698440504459.jpg 304 2.125 ms - -
+orers from userhelper : Cursor {
+  _readableState: ReadableState {
+    state: 6193,
+    highWaterMark: 16,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: null,
+    errored: null,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: null
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  operation: FindOperation {
+    options: {
+      skip: 0,
+      limit: 0,
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference],
+      db: [Db],
+      promiseLibrary: [Function: Promise]
+    },
+    explain: undefined,
+    ns: MongoDBNamespace { db: 'shopping', collection: 'order' },
+    cmd: {
+      find: 'shopping.order',
+      limit: 0,
+      skip: 0,
+      query: {},
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference]
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    },
+    cursorState: {
+      cursorId: null,
+      cmd: [Object],
+      documents: [],
+      cursorIndex: 0,
+      dead: false,
+      killed: false,
+      init: false,
+      notified: false,
+      limit: 0,
+      skip: 0,
+      batchSize: 1000,
+      currentLimit: 0,
+      transforms: undefined,
+      raw: undefined
+    }
+  },
+  pool: null,
+  server: null,
+  disconnectHandler: undefined,
+  bson: BSON {},
+  ns: 'shopping.order',
+  namespace: MongoDBNamespace { db: 'shopping', collection: 'order' },
+  cmd: {
+    find: 'shopping.order',
+    limit: 0,
+    skip: 0,
+    query: {},
+    raw: undefined,
+    hint: null,
+    timeout: undefined,
+    slaveOk: true,
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    }
+  },
+  options: {
+    skip: 0,
+    limit: 0,
+    raw: undefined,
+    hint: null,
+    timeout: undefined,
+    slaveOk: true,
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined
+    },
+    db: Db {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      s: [Object],
+      serverConfig: [Getter],
+      bufferMaxEntries: [Getter],
+      databaseName: [Getter],
+      [Symbol(kCapture)]: false
+    },
+    promiseLibrary: [Function: Promise]
+  },
+  topology: NativeTopology {
+    _events: [Object: null prototype] {
+      authenticated: [Function (anonymous)],
+      error: [Array],
+      timeout: [Array],
+      close: [Array],
+      parseError: [Array],
+      fullsetup: [Array],
+      all: [Array],
+      reconnect: [Array],
+      commandStarted: [Function (anonymous)],
+      commandSucceeded: [Function (anonymous)],
+      commandFailed: [Function (anonymous)],
+      serverOpening: [Function (anonymous)],
+      serverClosed: [Function (anonymous)],
+      serverDescriptionChanged: [Function (anonymous)],
+      serverHeartbeatStarted: [Function (anonymous)],
+      serverHeartbeatSucceeded: [Function (anonymous)],
+      serverHeartbeatFailed: [Function (anonymous)],
+      topologyOpening: [Function (anonymous)],
+      topologyClosed: [Function (anonymous)],
+      topologyDescriptionChanged: [Function (anonymous)],
+      joined: [Function (anonymous)],
+      left: [Function (anonymous)],
+      ping: [Function (anonymous)],
+      ha: [Function (anonymous)],
+      connectionPoolCreated: [Function (anonymous)],
+      connectionPoolClosed: [Function (anonymous)],
+      connectionCreated: [Function (anonymous)],
+      connectionReady: [Function (anonymous)],
+      connectionClosed: [Function (anonymous)],
+      connectionCheckOutStarted: [Function (anonymous)],
+      connectionCheckOutFailed: [Function (anonymous)],
+      connectionCheckedOut: [Function (anonymous)],
+      connectionCheckedIn: [Function (anonymous)],
+      connectionPoolCleared: [Function (anonymous)],
+      open: [Function]
+    },
+    _eventsCount: 35,
+    _maxListeners: Infinity,
+    s: {
+      id: 0,
+      options: [Object],
+      seedlist: [Array],
+      state: 'connected',
+      description: [TopologyDescription],
+      serverSelectionTimeoutMS: 30000,
+      heartbeatFrequencyMS: 10000,
+      minHeartbeatFrequencyMS: 500,
+      Cursor: [class Cursor extends CoreCursor],
+      bson: BSON {},
+      servers: [Map],
+      sessionPool: [ServerSessionPool],
+      sessions: Set(0) {},
+      promiseLibrary: [Function: Promise],
+      credentials: undefined,
+      clusterTime: null,
+      connectionTimers: Set(0) {},
+      sCapabilities: [ServerCapabilities]
+    },
+    serverApi: undefined,
+    [Symbol(kCapture)]: false,
+    [Symbol(waitQueue)]: Denque {
+      _head: 0,
+      _tail: 0,
+      _capacity: undefined,
+      _capacityMask: 3,
+      _list: [Array]
+    }
+  },
+  cursorState: {
+    cursorId: null,
+    cmd: {
+      find: 'shopping.order',
+      limit: 0,
+      skip: 0,
+      query: {},
+      raw: undefined,
+      hint: null,
+      timeout: undefined,
+      slaveOk: true,
+      readPreference: [ReadPreference]
+    },
+    documents: [],
+    cursorIndex: 0,
+    dead: false,
+    killed: false,
+    init: false,
+    notified: false,
+    limit: 0,
+    skip: 0,
+    batchSize: 1000,
+    currentLimit: 0,
+    transforms: undefined,
+    raw: undefined
+  },
+  logger: Logger { className: 'Cursor' },
+  s: {
+    numberOfRetries: 5,
+    tailableRetryInterval: 500,
+    currentNumberOfRetries: 5,
+    state: 0,
+    promiseLibrary: [Function: Promise],
+    explicitlyIgnoreSession: false
+  },
+  [Symbol(kCapture)]: false
+}

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var fileUpload = require('express-fileupload');
 const productHelpers = require('../helpers/product-helpers');
+const userHelper = require('../helpers/user-helper');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -61,6 +62,14 @@ router.post('/edit-product/',(req,res)=>{
     }
   })
 
+})
+
+router.get('/allOrders/',async(req,res)=>{
+  await userHelper.getAllOrders().then((resp)=>{
+   res.render('admin/all-orders',{orders:resp})
+  })
+  
+  
 })
 
 
